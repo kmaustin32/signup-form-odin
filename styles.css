@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -50,14 +51,22 @@ body {
 .form-div {
   flex: 1;
   border: 1px solid black;
+
 }
 
-.form-div > p.top-block {
-  font-size: 1.75em;
+.form-div:first-child {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25em;
   font-weight: bold;
+  padding: 0 8em 0 2em;
 }
 
 .logo {
   height: 100px;
   width: 100px;
+}
+
+.top-inner {
+  flex-basis: 50%;
 }
