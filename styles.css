@@ -33,7 +33,6 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  border: 2px solid greenyellow;
 }
 
 .inner-image {
@@ -42,7 +41,6 @@ body {
 
 #odin-logo {
   background-color: rgba(0, 0, 0, .9);
-  border: 2px orchid solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,11 +49,11 @@ body {
 
 .form-div {
   flex: 1;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .form-div > p.top-block {
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: bold;
 }
 
