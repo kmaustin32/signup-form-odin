@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,14 +12,14 @@ body {
 }
 
 #left-container {
-  flex-grow: 1;
+  flex: 1 1 33%;
   background-image: url('./cole-keister-nfxIvG2B62I-unsplash.jpg');
   background-size: contain;
   opacity: 90%;
 }
 
 #right-container {
-  flex-grow: 2;
+  flex: 2 2 67%;
   display: flex;
   flex-direction: column;
 }
@@ -47,4 +48,9 @@ body {
 .form-div {
   flex: 1;
   border: 2px solid black;
+}
+
+.form-div > p.top-block {
+  font-size: 2em;
+  font-weight: bold;
 }
