@@ -15,7 +15,7 @@ body {
   flex: 1 1 33%;
   background-image: url('./cole-keister-nfxIvG2B62I-unsplash.jpg');
   background-size: contain;
-  opacity: 90%;
+  opacity: 80%;
 }
 
 #right-container {
@@ -41,8 +41,12 @@ body {
 }
 
 #odin-logo {
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, .9);
   border: 2px orchid solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .form-div {
@@ -53,4 +57,9 @@ body {
 .form-div > p.top-block {
   font-size: 2em;
   font-weight: bold;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
 }
