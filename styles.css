@@ -13,16 +13,30 @@ body {
 }
 
 #left-container {
-  flex: 1 1 33%;
+  flex: 1 1 35%;
   background-image: url('./cole-keister-nfxIvG2B62I-unsplash.jpg');
-  background-size: contain;
+  background-size: cover;
+  background-position: right;
   opacity: 80%;
 }
 
+#odin-logo {
+  background-color: rgba(0, 0, 0, .9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
 #right-container {
-  flex: 2 2 67%;
+  flex: 2 2 65%;
   display: flex;
   flex-direction: column;
+}
+
+#form-input {
+  z-index: 10;
+  box-shadow: 2px 2px 8px darkgray;
 }
 
 .outer-div {
@@ -36,22 +50,12 @@ body {
   flex: 1;
 }
 
-.inner-image {
+.inner-image,.form-div {
   flex: 1;
 }
 
-#odin-logo {
-  background-color: rgba(0, 0, 0, .9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.form-div {
-  flex: 1;
-  border: 1px solid black;
-
+.form-div:nth-child(odd) {
+  background-color: rgb(250, 250, 250);
 }
 
 .form-div:first-child {
@@ -63,7 +67,7 @@ body {
 }
 
 .logo {
-  height: 100px;
+  height: 120px;
   width: 100px;
 }
 
