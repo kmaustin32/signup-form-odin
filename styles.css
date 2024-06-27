@@ -6,6 +6,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  color: #465b64;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 body {
   display: flex;
   flex-direction: row;
@@ -80,6 +86,14 @@ body {
   font-size: 1.25em;
   font-weight: bold;
   padding: 0 8em 0 2em;
+}
+
+.form-div:last-child {
+  padding: 2em 8em 0 2em;
+}
+
+.form-div > p {
+  padding-top: 1.25em;
 }
 
 .logo {
