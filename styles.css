@@ -72,8 +72,12 @@ body {
   flex: 1;
 }
 
-.inner-image,.form-div {
+.inner-image {
   flex: 1;
+}
+
+.form-div {
+  flex: 0 1 33.33%;
 }
 
 .form-div:nth-child(odd) {
