@@ -83,6 +83,11 @@ body {
   border-color: #465b64;
 }
 
+#list-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .outer-div {
   display: flex;
   flex-direction: column;
