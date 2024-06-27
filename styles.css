@@ -12,6 +12,12 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  color: #a3ada2;
+  font-weight: bolder;
+  transition: all ease .2s;
+}
+
 body {
   display: flex;
   flex-direction: row;
@@ -59,6 +65,22 @@ body {
   color: white;
   border: none;
   background-color: #465b64;
+  border: 2px solid #465b64;
+  transition: all ease .2s;
+}
+
+#submit-button:hover {
+  border: 2px solid white;
+  background-color: #a3ada2;
+  transform: scale(1.1);
+  transition: all ease .2s;
+  cursor: pointer;
+}
+
+#submit-button:active {
+  background-color: white;
+  color: #465b64;
+  border-color: #465b64;
 }
 
 .outer-div {
