@@ -29,6 +29,17 @@ body {
   min-height: 100dvh;
 }
 
+li > input {
+  width: 26em;
+  height: 2.5em;
+  border: 1px solid lightgray;
+}
+
+li > input:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+
 #left-container {
   flex: 1 1 35%;
   background-image: url('./cole-keister-nfxIvG2B62I-unsplash.jpg');
@@ -60,12 +71,13 @@ body {
 #form-input {
   z-index: 10;
   box-shadow: 2px 2px 8px darkgray;
+  padding: 2em 8em 0 2em;
 }
 
 #form-input > h1 {
   font-size: 1.25em;
   font-weight: bold;
-  padding: 2em 8em 0 2em;
+  margin-bottom: 2em;
 }
 
 #submit-button {
@@ -97,6 +109,12 @@ body {
 #list-container {
   display: flex;
   flex-direction: row;
+  gap: 8em;
+}
+
+#list-container > ul > li {
+  display: flex;
+  flex-direction: column;
 }
 
 .outer-div {
