@@ -6,19 +6,24 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --primary-dark: #465b64;
+  --primary-light: #a3ada2;
+}
+
 @font-face {
   font-family: 'Norse-Bold';
   src: url(./Norse-Bold.otf);
 }
 
 a {
-  color: #465b64;
+  color: var(--primary-dark);
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: #a3ada2;
+  color: var(--primary-light);
   font-weight: bolder;
   transition: all ease .2s;
 }
@@ -87,14 +92,14 @@ li > input:focus {
   font-weight: bold;
   color: white;
   border: none;
-  background-color: #465b64;
-  border: 2px solid #465b64;
+  background-color: var(--primary-dark);
+  border: 2px solid var(--primary-dark);
   transition: all ease .2s;
 }
 
 #submit-button:hover {
   border: 2px solid white;
-  background-color: #a3ada2;
+  background-color: var(--primary-light);
   transform: scale(1.1);
   transition: all ease .2s;
   cursor: pointer;
@@ -102,8 +107,8 @@ li > input:focus {
 
 #submit-button:active {
   background-color: white;
-  color: #465b64;
-  border-color: #465b64;
+  color: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 
 #list-container {
