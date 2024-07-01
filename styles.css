@@ -122,12 +122,21 @@ li > input:invalid {
 #list-container {
   display: flex;
   flex-direction: row;
-  gap: 8em;
+  /* flex-wrap: wrap; */
+  gap: 10%;
+  padding-bottom: 12px;
 }
 
 #list-container > ul > li {
   display: flex;
   flex-direction: column;
+}
+
+#list-container > ul > li > label {
+  padding: 0.2em 0;
+  font-family: 'Garamond';
+  font-weight: bold;
+  color: var(--primary-dark)
 }
 
 .outer-div {
@@ -158,7 +167,7 @@ li > input:invalid {
   flex-direction: column;
   font-size: 1.25em;
   font-weight: bold;
-  padding: 0 8em 0 2em;
+  padding: 0 12em 0 1.6em;
 }
 
 .form-div:last-child {
