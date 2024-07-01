@@ -37,12 +37,20 @@ body {
 li > input {
   width: 26em;
   height: 2.5em;
+  padding-left: 4px;
   border: 1px solid lightgray;
 }
 
 li > input:focus {
   outline: none;
-  border: 2px solid blue;
+  border: 1px solid mediumslateblue;
+  box-shadow: 1px 1px 8px mediumslateblue;
+}
+
+li > input:invalid {
+  outline: none;
+  border: 1px solid maroon;
+  box-shadow: 1px 1px 8px maroon;
 }
 
 #left-container {
